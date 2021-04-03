@@ -1,14 +1,14 @@
 import React from "react";
 import Sitem from "./Sitem";
 import PropTypes from "prop-types";
-
+import css from "./Statistical.module.css";
 export default function Statistics({ title, stats }) {
   return (
     <div>
-      <section>
-        <h2>{title}</h2>
+      <section className={css.statistics}>
+        <h2 className={css.title}>{title}</h2>
 
-        <ul>
+        <ul className={css.statList}>
           {stats.map((item) => (
             <Sitem key={item.id} {...item} />
           ))}

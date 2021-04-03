@@ -4,8 +4,7 @@ import Profile from "./components/Profile/Profile";
 import Statistics from "./components/Statistical/Statistical";
 import FriendList from "./components/FriendList/FriendList";
 import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
-// import transactions from "./transactions.json";
-// import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
+
 const App = () => {
   const { user, friends, statisticalData, transactions } = data;
   return (
